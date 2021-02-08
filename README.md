@@ -39,5 +39,7 @@ Build a workout tracker. You have already been provided with the front end code 
 * [Mongoose](https://www.npmjs.com/package/mongoose)
 * [Morgan](https://www.npmjs.com/package/morgan)
 
-
+## Links:
+* [Live App](https://workout-tracker2901.herokuapp.com/)
+* [Github Repo](https://github.com/NhiDanis/Workout-Tracker)
 
