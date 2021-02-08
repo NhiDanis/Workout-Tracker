@@ -46,7 +46,7 @@ module.exports = function (app) {
     });
 
     app.get("/api/workouts/range", (req, res) => {
-
+        console.log("INSIDE api/workouts/range");
         db.Workout.find({}).then(dbWorkout => {
             console.log("ALL WORKOUTS");
             console.log(dbWorkout);
