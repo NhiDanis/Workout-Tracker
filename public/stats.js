@@ -1,3 +1,14 @@
+fetch("/api/workouts/range")
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    populateChart(data);
+  });
+
+
+API.getWorkoutsInRange();
+
 function generatePalette() {
   const arr = [
     '#003f5c',
@@ -201,8 +212,5 @@ function workoutNames(data) {
   });
 
   // return de-duplicated array with JavaScript `Set` object
-  return [...new Set(workouts)];
+  return workouts;
 }
-
-// get all workout data from back-end
-API.getWorkoutsInRange().then(populateChart);
